@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="ur">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Multiplication Table</title>
-    <link rel="stylesheet" href="styles.css"> <!-- CSS File -->
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Generate a 3D Multiplication Table online! Simple, fast, and interactive." />
+        <meta name="keywords" content="Multiplication Table, Math Table Generator, Online Table, Math Help" />
+        <meta name="author" content="Your Name" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="3D Multiplication Table Generator" />
+        <meta property="og:description" content="Generate stylish multiplication tables online with 3D effects!" />
+        <meta property="og:image" content="https://table-js-jade.vercel.app/thumbnail.png" />
+        <meta property="og:url" content="https://table-js-jade.vercel.app/" />
 
-    <div class="container">
-        <h2>🔥 Modern 3D Multiplication Table 🔥</h2>
-        <input type="number" id="numberInput" placeholder="Enter Table Number" required>
-        <input type="number" id="limitInput" placeholder="Enter Table Limit" required>
-        <button onclick="generateTable()">Generate Table</button>
-        <button id="copyBtn" style="display: none;" onclick="copyTable()">📋 Copy Table</button>
+        <title>3D Multiplication Table</title>
+        <link rel="stylesheet" href="styles.css" />
+        <!-- CSS File -->
+    </head>
+    <body>
+        <div class="container">
+            <h2>🔥 Modern 3D Multiplication Table 🔥</h2>
+            <input type="number" id="numberInput" placeholder="Enter Table Number" required />
+            <input type="number" id="limitInput" placeholder="Enter Table Limit" required />
+            <button onclick="generateTable()">Generate Table</button>
+            <button id="copyBtn" style="display: none" onclick="copyTable()">📋 Copy Table</button>
 
-        <h3 id="tableHeading"></h3>
-        <table id="tableData"></table>
+            <h3 id="tableHeading"></h3>
+            <table id="tableData"></table>
 
-        <textarea id="copyText"></textarea>
-    </div>
+            <textarea id="copyText"></textarea>
+        </div>
 
-    <script src="script.js"></script> <!-- JavaScript File -->
-</body>
+        <script src="script.js"></script>
+        <!-- JavaScript File -->
+    </body>
 </html>

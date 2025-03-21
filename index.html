@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Multiplication Table</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS File -->
+</head>
+<body>
+
+    <div class="container">
+        <h2>🔥 Modern 3D Multiplication Table 🔥</h2>
+        <input type="number" id="numberInput" placeholder="Enter Table Number" required>
+        <input type="number" id="limitInput" placeholder="Enter Table Limit" required>
+        <button onclick="generateTable()">Generate Table</button>
+        <button id="copyBtn" style="display: none;" onclick="copyTable()">📋 Copy Table</button>
+
+        <h3 id="tableHeading"></h3>
+        <table id="tableData"></table>
+
+        <textarea id="copyText"></textarea>
+    </div>
+
+    <script src="script.js"></script> <!-- JavaScript File -->
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* Dark Theme */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: #0f172a;
+    color: white;
+}
+
+/* Stylish Container */
+.container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5),
+                -10px -10px 30px rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    transition: transform 0.3s;
+}
+
+/* Input Fields */
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* 3D Buttons */
+button {
+    width: 95%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    color: white;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5),
+                -4px -4px 15px rgba(255, 255, 255, 0.1);
+    transition: all 0.2s;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Copy Button */
+#copyBtn {
+    background: linear-gradient(135deg, #00b09b, #96c93d);
+}
+
+/* Stylish Table */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    transform: perspective(800px) rotateX(10deg);
+    transition: transform 0.5s;
+}
+
+table:hover {
+    transform: perspective(800px) rotateX(0deg);
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+/* Hidden Textarea for Copy */
+#copyText {
+    position: absolute;
+    left: -9999px;
+}
